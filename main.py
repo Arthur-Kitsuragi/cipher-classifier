@@ -11,8 +11,6 @@ import torch.nn.functional as F
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-from torch.utils.data import DataLoader, TensorDataset
-
 class LeNet(nn.Module):
     def __init__(self):
         super(LeNet, self).__init__()
